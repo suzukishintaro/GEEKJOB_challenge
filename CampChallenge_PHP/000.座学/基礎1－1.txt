@@ -1,0 +1,4 @@
+OS windows10
+CPU intel(R) Celeron(R) CPU N3160@1.60GHz 1.60GHz 
+メモリ　8G
+ハードディスク　SDD
