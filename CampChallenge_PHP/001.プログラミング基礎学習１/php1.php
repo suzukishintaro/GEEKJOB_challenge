@@ -1,29 +1,17 @@
 <?php
 
-function aa(){
-  echo nl2br("\n");
+$a=5;
+if ($a == 1)
+{
+  echo'1です!';
 }
-
-$tashi=5+5;
-echo "5+5=";
-echo $tashi;
-
-aa();
-
-$hiki=15-5;
-echo "15-5=";
-echo $hiki;
-
-aa();
-
-$kake=5*2;
-echo "5*2=";
-echo $kake;
-
-aa();
-
-$wari=20/2;
-echo "20/2=";
-echo $wari;
+elseif ($a == 2)
+{
+  echo 'プログラミングキャンプ！';
+}
+else
+{
+echo'その他です！';
+}
 
 ?>
