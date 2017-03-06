@@ -1,16 +1,17 @@
 <?php
-$num = 7;
+$num = "d";
 $massage = ' ';
  switch ($num){
-  case 1:
-    $massage = 'one';
+  case "A":
+    $massage = '英語';
     break;
-  case 2:
-    $massage = 'two';
+
+  case "あ":
+    $massage = '日本語';
     break;
 
   default:
-  $massage = '想定外';
+  $massage = '';
     break;
 }
 echo $massage;
