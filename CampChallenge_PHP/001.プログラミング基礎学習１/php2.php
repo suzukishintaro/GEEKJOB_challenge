@@ -1,18 +1,8 @@
 <?php
-$num = "d";
-$massage = ' ';
- switch ($num){
-  case "A":
-    $massage = '英語';
-    break;
+$n=8;
 
-  case "あ":
-    $massage = '日本語';
-    break;
-
-  default:
-  $massage = '';
-    break;
+for($i=1; $i<=20; $i++){
+  $n *= 8;
+  echo "$n<br>";
 }
-echo $massage;
- ?>
+?>
