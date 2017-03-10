@@ -1,8 +1,6 @@
+<pre>
 <?php
-$i = 1000;
-while(100 <= $i ){
-    $i = $i/2 ;
-
-    echo $i. "<br>";
-        }
+$var = array("10", "100", "soeda", "hayashi", "-20", "118", "END") ;
+echo $var[3];
 ?>
+</pre>
