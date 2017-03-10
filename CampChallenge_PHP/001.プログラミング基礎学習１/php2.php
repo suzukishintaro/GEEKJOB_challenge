@@ -1,14 +1,14 @@
 <?php
 
-$arr = array(
-             1 => "AAA",
-             "hello" => "world",
-             "soeda" => "33",
-             20  => "20"
-           );
-foreach ($arr as $value) {
-  echo $value;
+function my_profile(){
+      echo "鈴木です<br>";
+      echo "1988/06/17<br>";
+      echo "中野に住んでます。<br>";
 }
 
+
+for($i = 1; $i <= 10 ; $i++){
+ my_profile();
+}
 
 ?>
