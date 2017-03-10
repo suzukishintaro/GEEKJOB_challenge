@@ -1,9 +1,8 @@
 <?php
+$i = 1000;
+while(100 <= $i ){
+    $i = $i/2 ;
 
-$sum=0;
-for($i=0; $i<=100; $i++){
-$sum += $i;
-}
-echo $sum;
-
+    echo $i. "<br>";
+        }
 ?>
