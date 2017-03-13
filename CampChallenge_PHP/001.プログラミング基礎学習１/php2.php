@@ -1,14 +1,13 @@
 <?php
 
-function my_profile(){
-      echo "鈴木です<br>";
-      echo "1988/06/17<br>";
-      echo "中野に住んでます。<br>";
+function hanbetsu($int){
+  if($int%2==0){
+    echo "偶数";
+  }else {
+    echo "奇数";
+  }
 }
 
-
-for($i = 1; $i <= 10 ; $i++){
- my_profile();
-}
+hanbetsu(3);
 
 ?>
