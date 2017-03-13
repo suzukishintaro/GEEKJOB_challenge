@@ -1,13 +1,14 @@
 <?php
 
-function hanbetsu($int){
-  if($int%2==0){
-    echo "偶数";
-  }else {
-    echo "奇数";
+function number($a,$b=5,$type=false){
+  $c=$a*$b;
+  if ($type==true){
+    $c=$c*$c;
   }
+  return $c;
 }
 
-hanbetsu(3);
+echo number(10,20,true);
+
 
 ?>
