@@ -1,14 +1,5 @@
 <?php
-$start_num = 3;
-function doubule(){
-  global $start_num;
-   $start_num *= 2;
-   
-   static $kaiten = 0;
-   $kaiten++;
-}
-for ($i=0; $i < 20; $i++) {
-  doubule();
-}
-echo $start_num;
+$day = mktime(0, 0, 0, 1, 1, 2016);
+
+echo date("Y年m月d日 H時i分s秒", $day);
  ?>
