@@ -1,16 +1,18 @@
 <?php
-function his_profile(){
-  $id = 1;
-  $name = "鈴木";
-  $tanjou = "1988.06.17";
-  $jusho = "中野";
-  return array($id, $name, $tanjou, $jusho);
-}
+$prof1 = array(1,  'kazuaki', '1988.01.01', 'kurodawara');
+$prof2 = array(2, 'masato', '1988.02.02', 'kawaguchi');
+$prof3 = array(3, 'takashi', '2088.03.03', 'kawagoe');
 
-$prof =  his_profile();
+$proflist = array($prof1, $prof2, $prof3);
 
-for ($i=0; $i < count($prof); $i++) {
-  echo $prof[$i];
-  echo "<br>";
+$keyword = "masato";
+
+for ($i=0; $i < count($proflist); $i++) {
+  for ($j=0; $j < count($proflist[$i]); $j++) {
+    if (array_search($keyword, $proflist[$i]) !== false) {
+       print_r($proflist[$i]);
+       break;
+    }
+  }
 }
  ?>
