@@ -1,5 +1,6 @@
 <?php
-$day = mktime(0, 0, 0, 1, 1, 2016);
+date_default_timezone_set('Asia/Tokyo');
 
-echo date("Y年m月d日 H時i分s秒", $day);
+$today = date('Y-m-d H:i:s');
+echo $today;
  ?>
