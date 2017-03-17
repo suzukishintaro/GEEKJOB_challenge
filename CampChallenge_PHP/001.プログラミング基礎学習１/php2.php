@@ -1,15 +1,16 @@
 <?php
-function my_profile(){
-  echo "鈴木<br>";
-  echo "1988/06/17<br>";
-  echo "野球<br>";
-  return true;
+function his_profile(){
+  $id = 1;
+  $name = "鈴木";
+  $tanjou = "1988.06.17";
+  $jusho = "中野";
+  return array($id, $name, $tanjou, $jusho);
 }
-$prof =  my_profile();
-echo $prof;
-if ($prof == true) {
-  echo "この処理は正しく実行できました";
-} else {
-  echo "正しく実行できませんでした";
+
+$prof =  his_profile();
+
+for ($i=0; $i < count($prof); $i++) {
+  echo $prof[$i];
+  echo "<br>";
 }
  ?>
