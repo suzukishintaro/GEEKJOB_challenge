@@ -1,10 +1,13 @@
 <?php
-$day1 = mktime(0, 0, 0, 1, 1, 2015);
+echo "日本語をバイト数で取得", strlen('スズキ');
+echo "<br>";
 
-$day2 = mktime(23, 59, 59, 12, 31, 2015);
+echo "日本語を文字数で取得", mb_strlen('スズキ');
+echo "<br>";
 
-$result = $day2 - $day1;
+echo "英数字をバイト数で取得", strlen('suzuki');
+echo "<br>";
 
-echo "2015年1月1日 0時0分0秒から2015年12月31日
-23時59分59秒の差は<br>"."{$result}秒。";
+echo "英数字を文字数で取得", mb_strlen('suzuki');
+echo "<br>";
  ?>
